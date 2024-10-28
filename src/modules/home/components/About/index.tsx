@@ -1,21 +1,24 @@
-import { FC, type ReactNode } from 'react';
+import {FC, type ReactNode} from 'react';
 
 import BlockTitle from '@modules/common/components/BlockTitle';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
+import DocumentsList from "@modules/common/components/DocumentsList";
+import {aboutCompany} from "@modules/home/components/About/data";
 
 const About: FC<{
 	children?: ReactNode;
-}> = ({ children }) => {
+}> = ({children}) => {
 	return (
 		<section id="about">
-			<BlockTitle title="Про компанію" />
+			<BlockTitle title="Про компанію"/>
 
 			<SplitBlocks
 				title={`Про ТОВ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС»`}
 				titleType="text"
 			>
 				<p>
-					ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС»
+					ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «СТРАХОВИЙ БРОКЕР
+					«СМАРТПРОГРЕС»
 				</p>
 				<p> LIMITED LIABILITY COMPANY «INSURANCE BROKER «SMARTPROGRES»</p>
 				<p>
@@ -36,18 +39,20 @@ const About: FC<{
 					target="_blank"
 					rel="noreferrer"
 				>
-					Офіційне інтернет - представництво Національного банку, на якій розміщено
+					Офіційне інтернет - представництво Національного банку, на якій
+					розміщено
 					Реєстр страхових та перестрахових брокерів
 				</a>{' '}
-				<br /> <br />
+				<br/> <br/>
 				<a
 					href="https://bank.gov.ua/ua/consumer-protection/citizens-appeals"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Реєстр страхових та перестрахових брокерів Порядок розгляду надавачем
-					фінансових послуг звернень споживачів фінансових послуг
+					Звернутись до Національного банку України
 				</a>
+				<br/> <br/>
+				<DocumentsList list={aboutCompany}/>
 			</SplitBlocks>
 
 			{children}
