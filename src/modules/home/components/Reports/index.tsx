@@ -2,6 +2,7 @@ import Accordion from '@modules/common/components/Accordion';
 import DocumentsList from '@modules/common/components/DocumentsList';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
 import {
+	archiveInfo,
 	infoOwnershipStructure,
 	news,
 } from '@modules/home/components/Reports/data';
@@ -36,11 +37,15 @@ const Reports = () => {
 			</Accordion>
 
 			<Accordion title="Відповідальність страхового посередника">
-				<p>Договір страхування відповідальності страхових посередників ще не
-					укладено, у зв&#39;язку з тим, що ТОВ «СТРАХОВИЙ БРОКЕР
-					«СМАРТПРОГРЕС» станом на сьогоднішній день не отримує страхові
-					та/або перестрахові премії та страхові та/або перестрахові виплати від
-					клієнтів та/або страховиків, та/або перестраховиків.</p>
+				<p>Інформація про наявність договору страхування відповідальності під
+					час здійснення
+					посередницької діяльності у сфері страхування (перестрахування):
+					Річний ліміт покриття пофесійної відповідальності, наданий
+					АТ &quot;СК &quot;ББС
+					ІНШУРАНС&quot;
+					для ТОВ &quot;СТРАХОВИЙ БРОКЕР &quot;СМАРТПРОГРЕС&quot; та становить:
+					1 300 000,00
+					гривень.</p>
 			</Accordion>
 
 			<Accordion title="Партнери та страхові продукти">
@@ -50,6 +55,10 @@ const Reports = () => {
 
 			<Accordion title="Новини">
 				<DocumentsList list={news}/>
+			</Accordion>
+
+			<Accordion title="Архівна інформація">
+				<DocumentsList list={archiveInfo}/>
 			</Accordion>
 		</SplitBlocks>
 	);

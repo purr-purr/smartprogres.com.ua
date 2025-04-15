@@ -2,8 +2,6 @@ import {FC, type ReactNode} from 'react';
 
 import BlockTitle from '@modules/common/components/BlockTitle';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
-import DocumentsList from "@modules/common/components/DocumentsList";
-import {aboutCompany} from "@modules/home/components/About/data";
 
 const About: FC<{
 	children?: ReactNode;
@@ -34,14 +32,18 @@ const About: FC<{
 					<b>Директор</b>
 				</p>
 				<p>Габіда Дмитро Миколайович</p>
+				<p>ТОВ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС» у відповідності до рішення
+					Національного Банку України № 21/365-рк від 11.04.2025 включено до
+					реєстру
+					страхових посередників. Реєстраційний в реєстрі страхових посередників
+					№
+					00016547.</p>
 				<a
-					href="https://bank.gov.ua/ua/supervision/nonbanks/registers-lists"
+					href="https://kis.bank.gov.ua/search-fu"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Офіційне інтернет - представництво Національного банку, на якій
-					розміщено
-					Реєстр страхових та перестрахових брокерів
+					Пошук у реєстрі страхових посередників
 				</a>{' '}
 				<br/> <br/>
 				<a
@@ -52,7 +54,6 @@ const About: FC<{
 					Звернутись до Національного банку України
 				</a>
 				<br/> <br/>
-				<DocumentsList list={aboutCompany}/>
 			</SplitBlocks>
 
 			{children}
