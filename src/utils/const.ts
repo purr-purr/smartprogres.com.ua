@@ -15,6 +15,6 @@ export const COMPANY_CATCHPHRASE: string =
 export const COMPANY_PHONE: string = '+380634021676';
 export const COMPANY_EMAIL: string = 'llcisb@ukr.net';
 export const COMPANY_ADDRESS: string =
-	'Україна, 03056, місто Київ, вул.Борщагівська, будинок 154';
+	'Україна, 03061, місто Київ, вул. Шепелєва Миколи, будинок 6, приміщення 105, офіс 3';
 export const COMPANY_MAP_LINK: string =
-	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7280263653115!2d30.438647588854977!3d50.44616640000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc23c5c3a6c9%3A0xbd09cf351f3df766!2z0KLQoNCmINCc0LDRgNC80LXQu9Cw0LQ!5e0!3m2!1suk!2sie!4v1714328445335!5m2!1suk!2sie';
+	'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.2378455584108!2d30.428393343634834!3d50.42051491035823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9545f808ec1%3A0x81899e0b6e145ef8!2z0LLRg9C70LjRhtGPINCc0LjQutC-0LvQuCDQqNC10L_QtdC70ZTQstCwLCA2LCDQmtC40ZfQsiwg0KPQutGA0LDRl9C90LAsIDAyMDAw!5e1!3m2!1suk!2sie!4v1751541839254!5m2!1suk!2sie';

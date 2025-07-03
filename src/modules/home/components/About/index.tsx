@@ -1,27 +1,29 @@
-import { FC, type ReactNode } from 'react';
+import {FC, type ReactNode} from 'react';
 
 import BlockTitle from '@modules/common/components/BlockTitle';
 import SplitBlocks from '@modules/common/components/SplitBlocks';
+import {COMPANY_ADDRESS} from "@utils/const";
 
 const About: FC<{
 	children?: ReactNode;
-}> = ({ children }) => {
+}> = ({children}) => {
 	return (
 		<section id="about">
-			<BlockTitle title="Про компанію" />
+			<BlockTitle title="Про компанію"/>
 
 			<SplitBlocks
 				title={`Про ТОВ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС»`}
 				titleType="text"
 			>
 				<p>
-					ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС»
+					ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «СТРАХОВИЙ БРОКЕР
+					«СМАРТПРОГРЕС»
 				</p>
 				<p> LIMITED LIABILITY COMPANY «INSURANCE BROKER «SMARTPROGRES»</p>
 				<p>
 					<b>Місцезнаходження:</b>
 				</p>
-				<p>Україна, 03056, місто Київ, вул. Борщагівська, 154</p>
+				<p>{COMPANY_ADDRESS}</p>
 				<p>
 					<b>Контактна інформація:</b>
 				</p>
@@ -30,11 +32,13 @@ const About: FC<{
 				<p>
 					<b>Директор</b>
 				</p>
-				<p>Габіда Дмитро Миколайович</p>
+				<p>Козак Станіслав Георгійович.</p>
 				<p>
 					ТОВ «СТРАХОВИЙ БРОКЕР «СМАРТПРОГРЕС» у відповідності до рішення
-					Національного Банку України № 21/365-рк від 11.04.2025 включено до реєстру
-					страхових посередників. Реєстраційний в реєстрі страхових посередників №
+					Національного Банку України № 21/365-рк від 11.04.2025 включено до
+					реєстру
+					страхових посередників. Реєстраційний в реєстрі страхових посередників
+					№
 					00016547.
 				</p>
 				<a
@@ -44,7 +48,7 @@ const About: FC<{
 				>
 					Пошук у реєстрі страхових посередників
 				</a>{' '}
-				<br /> <br />
+				<br/> <br/>
 				<a
 					href="https://bank.gov.ua/ua/consumer-protection/citizens-appeals"
 					target="_blank"
@@ -52,7 +56,7 @@ const About: FC<{
 				>
 					Звернутись до Національного банку України
 				</a>
-				<br /> <br />
+				<br/> <br/>
 			</SplitBlocks>
 
 			{children}
